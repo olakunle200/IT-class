@@ -12,13 +12,13 @@ function add(){
     var f = 60;
     console.log(a+d);
 }
+function sub(){
+  //  console.log(e - f);
+
+}
 
 
  c = 100;
  // variable in the function are local because the the can be used only the function
- function sub(){
-   //  console.log(e - f);
-
- }
- add();
- sub();
+add();
+sub();
