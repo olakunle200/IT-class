@@ -36,9 +36,9 @@ console.log(newages)*/
 const ages = [25, 30, 45, 60, 75]
 const agesMulti = ages.map((multi)=>{return multi* 2})
 console.log(agesMulti)
-/*const agesTotal = ages.reduce((prev, next) => {
-    return prev + next})
-console.log(agesTotal)*/
+const agesTotal = ages.reduce((prev, next) => {
+    return prev * next})
+console.log(agesTotal)
 
 
 
