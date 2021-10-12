@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>studentpage</title>
+</head>
+<body>
+  <div class="container">
+
+    <div class="row">
+      <div class=" col-lg-8 offset-lg-2 col-md-6 offset-md-3 col-sm-12">
+        <table class="table table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Mat_No.</th>
+              <th scope="col" colspan="2">Actions</th>
+            </tr>
+          </thead>
+  
+          <% let num = 0 %>
+  
+          <% for (let student of stud) { %>
+          <tbody>
+            <tr>
+              <th scope="row"><%= num = num + 1 %></th>
+              <td><%= student.name %></td>
+              <td><%= student.mat_no %></td>
+              <td><a href="/student/view_student/<%= student._id %>" class="text-decoration-none">View student</a></td>
+              <td><a href="/adminDB/editStudents/<%= student._id %>" class="text-decoration-none">Edit students</a></td> 
+              
+            </tr>
+  
+          </tbody>
+          
+          <% } %>
+        </table>
+        <a href="/adminDB/addstudents"><button class="w-30 btn btn-lg btn-primary " type="submit">Add Student</button></a>
+      </div>
+    </div>
+  </div>
+    
+     
+      
+    </body>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/admin/addassessment" method="POST">
+        <div class="form-floating">
+          <label for="mat_no">Matriculation number</label>
+            <input type="text" class="form-control" name="mat_no" id="mat_no" placeholder="matriculation number">
+            
+          </div>
+          <div class="form-floating">
+          <label for="course_code">Course_Code</label>
+            <input type="text" class="form-control" name="course_code" id="course_code" placeholder="Course Code">
+            
+          </div>
+          <div class="form-floating">
+            <label for="scores">Scores</label>
+              <input type="number" class="form-control" name="scores" id="scores" placeholder="scores">
+              
+            </div>
+
+          
+          <button class="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
+          
+    </form>
+    
+</body>
+</html>
